@@ -5,11 +5,9 @@ Study Project in Jupyter Notebook about Apache Spark GraphX database
 ### Start Jupyter Notebook in K8S Cluster
 #### Prerequisits
 ```
-docker desktop
-helm
-```
-Docker desktop installed 
+docker desktop installed 
 Kubernetes Enabled 
+```
 
 Apply the deployment:
 ```
