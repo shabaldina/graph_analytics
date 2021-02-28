@@ -34,7 +34,7 @@ From bitnami helm chart https://github.com/bitnami/charts
 helm repo add bitnami https://charts.bitnami.com/bitnami
 ```
 
-Spark cluster with one master and two workers
+#### Spark cluster with one master and two workers
 ```
 helm install my-spark bitnami/spark
 ```
@@ -42,6 +42,7 @@ Pot forwarding to reach Spark Master Web UI
 ```
 kubectl port-forward svc/my-spark-master-svc 8090:80
 ```
-
-
-
+For PySpak
+```
+pip install pyspark
+```
