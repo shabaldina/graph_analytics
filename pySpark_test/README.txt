@@ -1,5 +1,4 @@
-1) Place py script in data/ dir
-2) Run: spark-submit --master spark://my-spark-master-svc:7077 data/Shakespeare_test.py
+Jupyter Notebook containing a test implementation for pySpark job sumbission
+on k8s cluster.
 
-TODO
-Get py script to run on cluster and not standalone
+Job can be followed on spark master web ui.
