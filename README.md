@@ -40,9 +40,9 @@ helm install my-spark bitnami/spark
 ```
 Pot forwarding to reach Spark Master Web UI
 ```
-kubectl port-forward svc/my-spark-master-svc 8090:80
+kubectl port-forward svc/my-spark-master-svc 4040:80
 ```
-For PySpak
+For PySpak in Jupyter environment
 ```
 pip install pyspark
 ```
