@@ -1,0 +1,61 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: spark-demo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: spark-demo
+  template:
+    metadata:
+      labels:
+        app: spark-demo
+    spec:
+      containers:
+        - name: spark-demo
+          image: jupyter/all-spark-notebook:latest
+          securityContext:
+            runAsUser: 0
+          env:
+            - name: "JUPYTER_ENABLE_LAB"
+              value: "yes"
+            - name: "GRANT_SUDO"
+              value: "yes"
+          command:
+            - "start-notebook.sh"
+          args:
+            - "--NotebookApp.token=''"
+            - "--NotebookApp.password=''"
+
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: spark-demo-service
+spec:
+  selector:
+    app: spark-demo
+  ports:
+    - protocol: TCP
+      port: 8888
+      targetPort: 8888
+
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: popular-slides-ingress
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  rules:
+    - http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: spark-demo-service
+                port:
+                  number: 8888
