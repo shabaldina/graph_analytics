@@ -46,7 +46,7 @@ The environemnt therefore containes:
 Open Notebook on localhost:8888/lab
 
 Either: 
- - from the landing page create a new notebook with spylon-kernel and copy code from pgraphX_scala/ScalaTest.ipynb into it
+ - from the landing page create a new notebook with spylon-kernel and copy code from pgraphX_scala/ScalaTest.ipynb into it\
 Or:
 - upload the file ScalaTest.ipynb into Jupyter and set up spylon-kernel for the notebook
 
