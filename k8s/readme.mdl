@@ -1,0 +1,5 @@
+Dockerfile is used to build image and push to docker hub
+-> Image based on jupyter/all-spark-notebook
+
+Kubernetes all spark deployment pulls image from dockerhub
+-> In current setup Kubernetes Cluster is not beneficial at all, since everything is running in a single container and with spark in local mode.

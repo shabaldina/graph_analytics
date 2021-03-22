@@ -1,0 +1,4 @@
+FROM jupyter/all-spark-notebook:3395de4db93a
+
+RUN git clone https://github.com/shabaldina/ApacheSpark_GraphX.git
+RUN pip3 install graphframes
