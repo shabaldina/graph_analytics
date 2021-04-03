@@ -38,9 +38,13 @@ kubectl get all -o wide
 kubectl port-forward deployment.apps/spark-demo 8888:8888
 ```
 
-Open Notebook on **localhost:8888/lab**
+### Voila! 
+Open Notebook on **[host]:8888/lab** 
+Open GraphX notebook 
+--> run Scala and Python code on different kernels, we hope it works ;)
 
-#### Jupyter environment
+
+### Jupyter environment
 The environemnt is based on jupyter/all-spark-notebook,  Docker image from https://jupyter-docker-stacks.readthedocs.io/en/latest/using/selecting.html
 
 The image includes Python, R, and Scala support for Apache Spark.
@@ -56,8 +60,4 @@ To the base image we added:
 - Clone of this git repository  
 
 
-#### Voila! 
-Open Notebook on localhost:8888/lab
-Open GraphX notebook 
---> run Scala and Python code on different kernels, we hope it works ;)
 
