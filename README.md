@@ -1,18 +1,18 @@
-### Apache Spak GraphX
+### Apache Spak GraphX  :fireworks:
 Study Project in Jupyter Notebook about Apache Spark GraphX graph processing system.
 
 Study project covers:
 - Intro to graph databases and graph analytics systems
-- Intro to Apche Spark
-- Concept and programming abstarctions behind GraphX
+- Intro to Apache Spark
+- Concept and programming abstractions behind GraphX
 - Analysis of bike trips with GraphX in Scala 
-- Analysis of a bitcoin data with GraphFrames in Python
+- Analysis of bitcoin data with GraphFrames in Python
 - GraphX vs. GraphFrames
 - Neo4J vs. and with! GraphX
 - Giraph vs. GraphX 
 
 
-### Jupyter Notebook in K8S
+### Environment set up for Jupyter Notebook in K8S
 #### Prerequisits
 ```
 docker 
@@ -20,7 +20,7 @@ Kubernetes (local or cloud)
 kubectl
 ```
 
-### Environment set up
+
 Asuming the prerequisits are fullfilled 
 #### Apply deployment to start Jupyter Notebook in k8s cluster
 ```
@@ -38,10 +38,15 @@ kubectl get all -o wide
 kubectl port-forward deployment.apps/spark-demo 8888:8888
 ```
 
-Open Notebook on localhost:8888/lab
+### Voila!  😍
+Open Notebook on **[host]:8888/lab** \
+Open GraphX notebook 
+--> run Scala and Python code on different kernels, we hope it works ;)
 
-#### Jupyter environment
-The environemnt is based on jupyter/all-spark-notebook Docker image from https://jupyter-docker-stacks.readthedocs.io/en/latest/using/selecting.html
+
+### Jupyter environment
+The environemnt is based on jupyter/all-spark-notebook,  Docker image from https://jupyter-docker-stacks.readthedocs.io/en/latest/using/selecting.html
+
 The image includes Python, R, and Scala support for Apache Spark.
 The environemnt containes: 
 - Installed latest Apache Spark with Hadoop binries
@@ -51,11 +56,8 @@ The environemnt containes:
 - ggplot2, sparklyr, and rcurl packages 
 
 To the base image we added:
- GraphFrames installation with pip
- Clone of this git repository  
+- GraphFrames installation with pip
+- Clone of this git repository  
 
 
-#### Voila! 
-Open Notebook on localhost:8888/lab
-Open GraphX notebook --> run Scala and Python code on different kernels, we hope it works ;)
 
