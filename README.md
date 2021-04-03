@@ -1,4 +1,4 @@
-### Apache Spak GraphX
+### Apache Spak GraphX  :fireworks:
 Study Project in Jupyter Notebook about Apache Spark GraphX graph processing system.
 
 Study project covers:
