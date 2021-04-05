@@ -40,7 +40,7 @@ kubectl port-forward deployment.apps/spark-demo 8888:8888
 ```
 
 ### Voila!  😍
-Open Notebook on **[host]:8888/lab** \
+Open Notebook 2021-04-05_IntroductionToDistributedGraphAnalyticsSystems_V1.ipynb on **[host]:8888/lab** \
 Open GraphX notebook 
 --> run Scala and Python code on different kernels, we hope it works ;)
 
