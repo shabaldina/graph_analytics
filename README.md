@@ -1,4 +1,4 @@
-### Apache Spak GraphX  :fireworks:
+### GraphX & GraphFrames  :fireworks:
 Study Project: itro to graph processing system: GraphX and GraphFrames for Apache Spark.
 Beyound that the comparison of GraphX with Giraph and connectivity of Apache Spark with Neo4J is covered.
 
