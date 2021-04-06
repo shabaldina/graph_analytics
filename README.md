@@ -25,7 +25,7 @@ kubectl
 Asuming the prerequisits are fullfilled 
 #### Apply deployment to start Jupyter Notebook in k8s cluster
 ```
-kubectl apply -f ./k8s/deployment-all-spark-notebook.yaml
+kubectl apply -f ./04_K8s_Deployment/deployment-all-spark-notebook.yaml
 ```
 Check the status of the resources 
 ```
