@@ -1,6 +1,6 @@
 ### GraphX & GraphFrames  :fireworks:
-Intro to graph processing system: GraphX and GraphFrames for Apache Spark.
-Beyound that the comparison of GraphX with Giraph and connectivity of Apache Spark with Neo4J is covered.
+Intro to graph processing system: GraphX and GraphFrames for Apache Spark.<br/>
+Beyound that: comparison of GraphX with Giraph and connectivity of Apache Spark with Neo4J.
 
 Project covers:
 - Intro to graph databases and graph analytics systems
