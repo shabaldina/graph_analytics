@@ -2,7 +2,7 @@
 Intro to graph processing system: GraphX and GraphFrames for Apache Spark.<br/>
 Beyound that: comparison of GraphX with Giraph and connectivity of Apache Spark with Neo4J.
 
-Project covers:
+Jupyter notebook 2021-04-05_IntroductionToDistributedGraphAnalyticsSystems_V1.ipynb covers:
 - Intro to graph databases and graph analytics systems
 - Intro to Apache Spark
 - Concept and programming abstractions behind GraphX
